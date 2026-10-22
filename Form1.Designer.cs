@@ -34,6 +34,7 @@
             TxtNumber2 = new TextBox();
             TxtResult = new TextBox();
             label3 = new Label();
+            BtnCalculate = new Button();
             SuspendLayout();
             // 
             // label1
@@ -85,11 +86,22 @@
             label3.TabIndex = 5;
             label3.Text = "Result";
             // 
+            // BtnCalculate
+            // 
+            BtnCalculate.Location = new Point(306, 333);
+            BtnCalculate.Name = "BtnCalculate";
+            BtnCalculate.Size = new Size(110, 55);
+            BtnCalculate.TabIndex = 6;
+            BtnCalculate.Text = "Calculate";
+            BtnCalculate.UseVisualStyleBackColor = true;
+            BtnCalculate.Click += BtnCalculate_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(BtnCalculate);
             Controls.Add(label3);
             Controls.Add(TxtResult);
             Controls.Add(TxtNumber2);
@@ -110,5 +122,6 @@
         private TextBox TxtNumber2;
         private TextBox TxtResult;
         private Label label3;
+        private Button BtnCalculate;
     }
 }
