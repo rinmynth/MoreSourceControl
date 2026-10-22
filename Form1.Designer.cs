@@ -30,9 +30,9 @@
         {
             label1 = new Label();
             label2 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            TxtNumber1 = new TextBox();
+            TxtNumber2 = new TextBox();
+            TxtResult = new TextBox();
             label3 = new Label();
             SuspendLayout();
             // 
@@ -54,27 +54,27 @@
             label2.TabIndex = 1;
             label2.Text = "Number 2: ";
             // 
-            // textBox1
+            // TxtNumber1
             // 
-            textBox1.Location = new Point(357, 128);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 2;
+            TxtNumber1.Location = new Point(357, 128);
+            TxtNumber1.Name = "TxtNumber1";
+            TxtNumber1.Size = new Size(100, 23);
+            TxtNumber1.TabIndex = 2;
             // 
-            // textBox2
+            // TxtNumber2
             // 
-            textBox2.Location = new Point(348, 187);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 3;
+            TxtNumber2.Location = new Point(357, 186);
+            TxtNumber2.Name = "TxtNumber2";
+            TxtNumber2.Size = new Size(100, 23);
+            TxtNumber2.TabIndex = 3;
             // 
-            // textBox3
+            // TxtResult
             // 
-            textBox3.Location = new Point(361, 252);
-            textBox3.Name = "textBox3";
-            textBox3.ReadOnly = true;
-            textBox3.Size = new Size(100, 23);
-            textBox3.TabIndex = 4;
+            TxtResult.Location = new Point(357, 251);
+            TxtResult.Name = "TxtResult";
+            TxtResult.ReadOnly = true;
+            TxtResult.Size = new Size(100, 23);
+            TxtResult.TabIndex = 4;
             // 
             // label3
             // 
@@ -91,9 +91,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(label3);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(TxtResult);
+            Controls.Add(TxtNumber2);
+            Controls.Add(TxtNumber1);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "Form1";
@@ -106,9 +106,9 @@
 
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox TxtNumber1;
+        private TextBox TxtNumber2;
+        private TextBox TxtResult;
         private Label label3;
     }
 }
